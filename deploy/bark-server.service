@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/bark-server
+ExecStart=/usr/local/bin/bark-server -serverless true
 ExecStop=/bin/kill -s QUIT $MAINPID
 
 [Install]
